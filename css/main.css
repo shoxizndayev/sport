@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.sport {
+    border: 1px solid black;
+    box-shadow: 0 10px 10px 0 black;
+    border-radius: 10px;
+    width: 400px;
+    padding: 30px;
+    margin: 50px;
+}
+
+.sport__heading {
+    margin-top: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+.sport__input__tennis:checked + .sport__controller {
+    background-image:url(../img/table-tennis.png);
+    
+}
+
+.sport__input__basketbol:checked + .sport__controller {
+    background-image:url(../img/basketball-ball.png);
+    
+}
+
+.sport__input__voleybol:checked + .sport__controller {
+    background-image:url(../img/volleyball-ball.png);
+    
+}
+
+.sport__input__hokkey:checked + .sport__controller {
+    background-image:url(../img/hockey-puck.png);
+    
+}
+
+.sport__controller {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position:  center;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-size: contain;
+}
+
+.sport__label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* ====disabled==== */
+
+.disabled:disabled + .sport__controller {
+    opacity: 0.3;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+ /* ====disabled__checked==== */
+
+.checked__tennis:checked + .sport__controller {
+    background-image:url(../img/table-tennis.png);
+}
+
+.checked__basketbol:checked + .sport__controller {
+    background-image:url(../img/basketball-ball.png);
+}
+
+.checked__voleybol:checked + .sport__controller {
+    background-image:url(../img/volleyball-ball.png);
+}
+
+.checked__hokkey:checked + .sport__controller {
+    background-image:url(../img/hockey-puck.png);
+}
+
+
